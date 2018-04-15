@@ -15,7 +15,7 @@ namespace WordCounterPik
         /// <summary>
         /// Подсчитать вхождения слов
         /// </summary>
-        Dictionary<string, int> CountWords(string[] words)
+        Dictionary<string, int> CountWords(IEnumerable<string> words)
         {
             Dictionary<string, int> countedWords = new Dictionary<string, int>();
             foreach (string word in words)
