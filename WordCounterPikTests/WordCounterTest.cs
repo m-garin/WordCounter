@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+п»їusing System.Collections.Generic;
 using WordCounterPik;
 using Xunit;
 
@@ -9,10 +9,10 @@ namespace WordCounterPikTests
         [Fact]
         public void CountedWordsTest()
         {
-            IWordCounter wordCounter = new WordCounter("А в ГК ПИК есть комната пик");
+            IWordCounter wordCounter = new WordCounter("Рђ РІ Р“Рљ РџРРљ РµСЃС‚СЊ РєРѕРјРЅР°С‚Р° РїРёРє");
 
-            Dictionary<string, int> result = new Dictionary<string, int> { { "а", 1 }, { "в", 1 },
-                { "гк", 1 }, {"пик" , 2}, {"есть" , 1}, {"комната" , 1} };
+            Dictionary<string, int> result = new Dictionary<string, int> { { "Р°", 1 }, { "РІ", 1 },
+                { "РіРє", 1 }, {"РїРёРє" , 2}, {"РµСЃС‚СЊ" , 1}, {"РєРѕРјРЅР°С‚Р°" , 1} };
             Assert.Equal(wordCounter.CountedWords, result);
         }
     }
